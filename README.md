@@ -21,7 +21,7 @@ The question does not define the concept of "winner" of "best model". So, here w
 
 ```
 - Random: The data needs to come from a random sample or randomized experiment.
-- Normal: The sampling distribution of p needs to be approximately normal — needs at least 1010 expected successes and 1010 expected failures.
+- Normal: The sampling distribution of p needs to be approximately normal — needs at least 10 expected successes and 10 expected failures.
 - Independent: Individual observations need to be independent. If sampling
 without replacement, our sample size shouldn't be more than 10% of the population.
 ```
