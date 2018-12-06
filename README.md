@@ -10,14 +10,12 @@ The data provided covers the dates ranging from June 6th to July 15th of 2017. S
     Father's day => June 18
     Independence's day => July 4
 ```
-It should not be a surprise if we see sales spikes in the provided data.
+It should not be a surprise if we see sales spikes in the provided data. Although, one could think that by including holidays we wouldn't be measuring the raw marketing power of advertisment emails, this thought is most often wrong. Holidays are inheretly part of an economic year. In the U.S, 25% of sales happend in Black Friday, so it's perfectly fine to include these outside factors in our data. We just need to recognize them.
 
 ## Asumptions
-Conditions for inference are met, those are: the random condition, the normal condition, the independent condition.
+1. The question does not define the concept of "winner". So, here we can make an assumption (for the sake of simplicity and other reasons, which I will, later, explain why) where the best model has the email that is most likely to be opened. Of couse, this could vary into many alternatives such as: profit generated per email, profit generated per opened email, success rate of openings, success rate of clicked ones, succes rate of orders, etc.
 
-Significance value of a = 0.05
-
-The question does not define the concept of "winner" of "best model". So, here we can make an assumption where the best model is the one that generates the most revenue per email. 
+2. Conditions for inference are met, those are: the random condition, the normal condition, the independent condition.
 
 ```
 - Random: The data needs to come from a random sample or randomized experiment.
@@ -26,12 +24,25 @@ The question does not define the concept of "winner" of "best model". So, here w
 without replacement, our sample size shouldn't be more than 10% of the population.
 ```
 
+3. Significance value of a = 0.05
+
 ## Hipothesis
 
 ```
 Null Hypothesis: The propensity model (CTRL) gives the same results as the engagement models (TEST)
-Alternate hypothesis: The engagement models (TEST) surpases the CTRL model
+Alternate hypothesis: The engagement models (TEST) surpases the propensity model (CTRL)
 ```
+## Statistics and Progression walkthough
+
+
+
+## Findings
+
+Open ratio = open emails/total emails sent,  alpha = 0.001 => Refuted Null hipothesis
+
+Propensity models (CTRL) on average generates more revenue. With the given data, engagement models produces 0.01 cents less than the propensity models. 
+
+Engagement models (TEST) does a better job at attracting customers attention. (Evidenced in alpha test < 0.05)
 
 ## Technologies used
 
